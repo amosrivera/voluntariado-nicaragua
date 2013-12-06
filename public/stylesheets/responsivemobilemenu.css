@@ -1,0 +1,146 @@
+/*
+
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+
+*/
+
+.rmm {
+    display: block;
+    line-height: 16px !important;
+    padding-top: 0;
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    top: 28px;
+    width: 100%;
+}
+.rmm * {
+	-webkit-tap-highlight-color:transparent !important;
+	/*font-weight: 500;*/
+	text-transform: uppercase;
+}
+.rmm a {
+	color:#555;
+	text-decoration:none;
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+	margin:0px;
+	padding:0px;
+}
+.rmm ul {
+    display: block;
+    list-style: none outside none;
+    /*margin: 0 20% !important;*/
+    overflow: hidden;
+    width: 100%;
+}
+.rmm ul li.active a{
+    /*background:#ff9900;*/
+   font-weight: 900;
+   color: #3899b5;
+}
+
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+	display:none !important;
+	height:0px !important;
+	width:0px !important;
+}
+/* */
+
+
+.rmm .rmm-main-list li {
+	display:inline;
+	padding:padding:0px;
+	margin:0px !important;
+}
+.rmm-toggled {
+	display:none;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+.rmm-button:hover {
+	cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+	display:none;
+	margin:0px !important;
+	padding:0px !important;
+}
+.rmm .rmm-toggled ul li {
+	display:block;
+	margin:0 auto !important;
+}
+
+.rmm .rmm-toggled ul li.active a{
+    background:none repeat scroll 0 0 #3899B5;
+}
+
+
+
+
+/* MINIMAL STYLE */
+
+.rmm.minimal a {
+}
+.rmm.minimal a:hover {
+	
+}
+.rmm.minimal .rmm-main-list li a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0px;
+    padding: 0 15px;
+}
+.rmm.minimal .rmm-toggled {
+	width:95%;
+	min-height:36px;
+}
+.rmm.minimal .rmm-toggled-controls {
+	display:block;
+	height:36px;
+	color:#333333;
+	text-align:left;
+	position:relative;
+}
+.rmm.minimal .rmm-toggled-title {
+	position:relative;
+	top:9px;
+	left:9px;
+	font-size:16px;
+	color:#33333;
+}
+.rmm.minimal .rmm-button {
+	display:block;
+	position:absolute;
+	right:9px;
+	/*top:7px;*/
+}
+
+.rmm.minimal .rmm-button span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:#333333;
+	width:25px;
+}
+.rmm.minimal .rmm-toggled ul li a {
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #dedede;
+	color:#333333;
+}
+.minimal .rmm-toggled ul li:first-child a {
+	border-top:1px solid #dedede;
+}

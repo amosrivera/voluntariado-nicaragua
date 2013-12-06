@@ -1,0 +1,20 @@
+{
+  "name": "voluntariado-nicaragua",
+  "description":"Web site developed for the nicaraguan volunteer day.",
+  "author":{
+    "name": "Amós Rivera",
+    "email": "arivera.utpmp@gmail.com"
+  },
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/amosrivera/voluntariado-nicaragua.git"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.6",
+    "ejs": "*"
+  }
+}
